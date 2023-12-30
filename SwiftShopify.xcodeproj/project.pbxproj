@@ -130,6 +130,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFEFBD0B2B3E447E0016D72F /* Build configuration list for PBXNativeTarget "SwiftShopify" */;
 			buildPhases = (
+				EFB789D22B3FD02B005D4D8E /* SwiftLint */,
 				EFEFBCDD2B3E44760016D72F /* Sources */,
 				EFEFBCDE2B3E44760016D72F /* Frameworks */,
 				EFEFBCDF2B3E44760016D72F /* Resources */,
@@ -247,6 +248,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EFB789D22B3FD02B005D4D8E /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EFEFBCDD2B3E44760016D72F /* Sources */ = {
