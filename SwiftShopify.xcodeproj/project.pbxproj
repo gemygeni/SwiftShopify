@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		EFEFBCE52B3E44760016D72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFBCE42B3E44760016D72F /* AppDelegate.swift */; };
 		EFEFBCE72B3E44760016D72F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFBCE62B3E44760016D72F /* SceneDelegate.swift */; };
-		EFEFBCE92B3E44760016D72F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFBCE82B3E44760016D72F /* ViewController.swift */; };
-		EFEFBCEC2B3E44760016D72F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFEFBCEA2B3E44760016D72F /* Main.storyboard */; };
 		EFEFBCEE2B3E447D0016D72F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEFBCED2B3E447D0016D72F /* Assets.xcassets */; };
 		EFEFBCF12B3E447D0016D72F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFEFBCEF2B3E447D0016D72F /* LaunchScreen.storyboard */; };
 		EFEFBCFC2B3E447E0016D72F /* SwiftShopifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFBCFB2B3E447E0016D72F /* SwiftShopifyTests.swift */; };
@@ -36,11 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EFB789D12B3FC0BF005D4D8E /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
 		EFEFBCE12B3E44760016D72F /* SwiftShopify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftShopify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEFBCE42B3E44760016D72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFEFBCE62B3E44760016D72F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EFEFBCE82B3E44760016D72F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EFEFBCEB2B3E44760016D72F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFEFBCED2B3E447D0016D72F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFEFBCF02B3E447D0016D72F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFEFBCF22B3E447D0016D72F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +76,7 @@
 		EFEFBCD82B3E44760016D72F = {
 			isa = PBXGroup;
 			children = (
+				EFB789D12B3FC0BF005D4D8E /* Networking */,
 				EFEFBCE32B3E44760016D72F /* SwiftShopify */,
 				EFEFBCFA2B3E447E0016D72F /* SwiftShopifyTests */,
 				EFEFBD042B3E447E0016D72F /* SwiftShopifyUITests */,
@@ -101,8 +99,6 @@
 			children = (
 				EFEFBCE42B3E44760016D72F /* AppDelegate.swift */,
 				EFEFBCE62B3E44760016D72F /* SceneDelegate.swift */,
-				EFEFBCE82B3E44760016D72F /* ViewController.swift */,
-				EFEFBCEA2B3E44760016D72F /* Main.storyboard */,
 				EFEFBCED2B3E447D0016D72F /* Assets.xcassets */,
 				EFEFBCEF2B3E447D0016D72F /* LaunchScreen.storyboard */,
 				EFEFBCF22B3E447D0016D72F /* Info.plist */,
@@ -233,7 +229,6 @@
 			files = (
 				EFEFBCF12B3E447D0016D72F /* LaunchScreen.storyboard in Resources */,
 				EFEFBCEE2B3E447D0016D72F /* Assets.xcassets in Resources */,
-				EFEFBCEC2B3E44760016D72F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFEFBCE92B3E44760016D72F /* ViewController.swift in Sources */,
 				EFEFBCE52B3E44760016D72F /* AppDelegate.swift in Sources */,
 				EFEFBCE72B3E44760016D72F /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +291,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EFEFBCEA2B3E44760016D72F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EFEFBCEB2B3E44760016D72F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EFEFBCEF2B3E447D0016D72F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,10 +427,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftShopify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,10 +455,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftShopify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
