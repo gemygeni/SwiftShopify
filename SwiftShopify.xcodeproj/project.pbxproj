@@ -14,6 +14,13 @@
 		EFEFBCFC2B3E447E0016D72F /* SwiftShopifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFBCFB2B3E447E0016D72F /* SwiftShopifyTests.swift */; };
 		EFEFBD062B3E447E0016D72F /* SwiftShopifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFBD052B3E447E0016D72F /* SwiftShopifyUITests.swift */; };
 		EFEFBD082B3E447E0016D72F /* SwiftShopifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFBD072B3E447E0016D72F /* SwiftShopifyUITestsLaunchTests.swift */; };
+		EFF42CBA2B52659800C4EDED /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EFF42CB92B52659800C4EDED /* swiftgen.yml */; };
+		EFF42CBC2B52669300C4EDED /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF42CBB2B52669300C4EDED /* Colors.xcassets */; };
+		EFF42CC02B52680700C4EDED /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF42CBF2B52680700C4EDED /* Strings+Generated.swift */; };
+		EFF42CC22B52682600C4EDED /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF42CC12B52682600C4EDED /* XCAssets+Generated.swift */; };
+		EFF42CC42B52684300C4EDED /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF42CC32B52684300C4EDED /* Fonts+Generated.swift */; };
+		EFF42CC62B52685900C4EDED /* JSON+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF42CC52B52685900C4EDED /* JSON+Generated.swift */; };
+		EFF42CC82B52688E00C4EDED /* en.lproj in Sources */ = {isa = PBXBuildFile; fileRef = EFF42CC72B52688E00C4EDED /* en.lproj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +53,13 @@
 		EFEFBD012B3E447E0016D72F /* SwiftShopifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftShopifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEFBD052B3E447E0016D72F /* SwiftShopifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftShopifyUITests.swift; sourceTree = "<group>"; };
 		EFEFBD072B3E447E0016D72F /* SwiftShopifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftShopifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EFF42CB92B52659800C4EDED /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
+		EFF42CBB2B52669300C4EDED /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		EFF42CBF2B52680700C4EDED /* Strings+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		EFF42CC12B52682600C4EDED /* XCAssets+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		EFF42CC32B52684300C4EDED /* Fonts+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
+		EFF42CC52B52685900C4EDED /* JSON+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON+Generated.swift"; sourceTree = "<group>"; };
+		EFF42CC72B52688E00C4EDED /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = text; path = en.lproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +111,15 @@
 		EFEFBCE32B3E44760016D72F /* SwiftShopify */ = {
 			isa = PBXGroup;
 			children = (
+				EFF42CB92B52659800C4EDED /* swiftgen.yml */,
+				EFF42CC72B52688E00C4EDED /* en.lproj */,
 				EFEFBCE42B3E44760016D72F /* AppDelegate.swift */,
 				EFEFBCE62B3E44760016D72F /* SceneDelegate.swift */,
 				EFEFBCED2B3E447D0016D72F /* Assets.xcassets */,
+				EFF42CBB2B52669300C4EDED /* Colors.xcassets */,
 				EFEFBCEF2B3E447D0016D72F /* LaunchScreen.storyboard */,
 				EFEFBCF22B3E447D0016D72F /* Info.plist */,
+				EFF42CBE2B5267D600C4EDED /* Generated */,
 			);
 			path = SwiftShopify;
 			sourceTree = "<group>";
@@ -123,6 +141,17 @@
 			path = SwiftShopifyUITests;
 			sourceTree = "<group>";
 		};
+		EFF42CBE2B5267D600C4EDED /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				EFF42CBF2B52680700C4EDED /* Strings+Generated.swift */,
+				EFF42CC12B52682600C4EDED /* XCAssets+Generated.swift */,
+				EFF42CC32B52684300C4EDED /* Fonts+Generated.swift */,
+				EFF42CC52B52685900C4EDED /* JSON+Generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,6 +159,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFEFBD0B2B3E447E0016D72F /* Build configuration list for PBXNativeTarget "SwiftShopify" */;
 			buildPhases = (
+				EFF42CC92B52690400C4EDED /* SwiftGen */,
 				EFB789D22B3FD02B005D4D8E /* SwiftLint */,
 				EFEFBCDD2B3E44760016D72F /* Sources */,
 				EFEFBCDE2B3E44760016D72F /* Frameworks */,
@@ -229,7 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFEFBCF12B3E447D0016D72F /* LaunchScreen.storyboard in Resources */,
+				EFF42CBC2B52669300C4EDED /* Colors.xcassets in Resources */,
 				EFEFBCEE2B3E447D0016D72F /* Assets.xcassets in Resources */,
+				EFF42CBA2B52659800C4EDED /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +301,24 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		EFF42CC92B52690400C4EDED /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftgen >/dev/null; then\n  swiftgen config run\nelse\n  echo \"warning: SwiftGen not installed, download from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -278,6 +328,11 @@
 			files = (
 				EFEFBCE52B3E44760016D72F /* AppDelegate.swift in Sources */,
 				EFEFBCE72B3E44760016D72F /* SceneDelegate.swift in Sources */,
+				EFF42CC02B52680700C4EDED /* Strings+Generated.swift in Sources */,
+				EFF42CC62B52685900C4EDED /* JSON+Generated.swift in Sources */,
+				EFF42CC82B52688E00C4EDED /* en.lproj in Sources */,
+				EFF42CC42B52684300C4EDED /* Fonts+Generated.swift in Sources */,
+				EFF42CC22B52682600C4EDED /* XCAssets+Generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
