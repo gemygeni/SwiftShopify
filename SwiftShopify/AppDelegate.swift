@@ -4,11 +4,12 @@
     //
 
     import UIKit
-
+    import ShipBookSDK
     @main
     class AppDelegate: UIResponder, UIApplicationDelegate {
         func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
             // Override point for customization after application launch.
+            ShipBook.start(appId:"65af0a8e1edee957ab221a4e", appKey:"de24f3ae3cf3321038cdff788b96cf43")
             return true
         }
 
