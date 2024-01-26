@@ -22,6 +22,7 @@
 		EFF42CC42B52684300C4EDED /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF42CC32B52684300C4EDED /* Fonts+Generated.swift */; };
 		EFF42CC62B52685900C4EDED /* JSON+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF42CC52B52685900C4EDED /* JSON+Generated.swift */; };
 		EFF42CC82B52688E00C4EDED /* en.lproj in Sources */ = {isa = PBXBuildFile; fileRef = EFF42CC72B52688E00C4EDED /* en.lproj */; };
+		EFF941252B633D67003EC39D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EFF941242B633D67003EC39D /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF941252B633D67003EC39D /* Kingfisher in Frameworks */,
 				EFAD2BD82B5F443300FC7A43 /* ShipBookSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +176,7 @@
 			name = SwiftShopify;
 			packageProductDependencies = (
 				EFAD2BD72B5F443300FC7A43 /* ShipBookSDK */,
+				EFF941242B633D67003EC39D /* Kingfisher */,
 			);
 			productName = SwiftShopify;
 			productReference = EFEFBCE12B3E44760016D72F /* SwiftShopify.app */;
@@ -249,6 +252,7 @@
 			mainGroup = EFEFBCD82B3E44760016D72F;
 			packageReferences = (
 				EFAD2BD62B5F443300FC7A43 /* XCRemoteSwiftPackageReference "ShipBookSDK-iOS" */,
+				EFF941232B633D67003EC39D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = EFEFBCE22B3E44760016D72F /* Products */;
 			projectDirPath = "";
@@ -684,6 +688,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		EFF941232B633D67003EC39D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -691,6 +703,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EFAD2BD62B5F443300FC7A43 /* XCRemoteSwiftPackageReference "ShipBookSDK-iOS" */;
 			productName = ShipBookSDK;
+		};
+		EFF941242B633D67003EC39D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFF941232B633D67003EC39D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
